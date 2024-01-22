@@ -33,7 +33,7 @@ public class Hooks {
 		{
 			File srcPath=((TakesScreenshot) testConextSetup.testBase.WebDriverManager()).getScreenshotAs(OutputType.FILE);
 			byte[] fileContent=FileUtils.readFileToByteArray(srcPath);
-			scenario.attach(fileContent, "image/png", "image");
+			scenario.attach(fileContent, "image/png", "image1");
 		}
 		
 	}
